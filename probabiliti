@@ -1,1 +1,9 @@
-
+pribabiliti of Jack = 4/52
+probabiliti of King = 4/52
+probabiliti of Jack or King = 8/52
+probabiliti of Jack and King = 4/52 + 4/51
+probabiliti of Jack or 6 (шестёрка) or King = 12/52
+probabiliti of Heart and Jack = 1/52
+probabiliti of Heart and King = 1/52
+probabiliti of Heart and(Jack or 6) = 2/52
+probabiliti of Heart and Jack and 6 = 1/52 + 1/51
