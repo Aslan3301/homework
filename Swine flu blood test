@@ -7,5 +7,4 @@ If the probability of a false positive is 2%, what is the new probability that y
 
 
 Picniс 
-
-(1 / 2) * (1 / 10) / (1 / 4)
+p(rain | cloudy) = (1 / 2) * (1 / 10) / (1 / 4)
