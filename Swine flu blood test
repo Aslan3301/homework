@@ -1,11 +1,11 @@
 What is the probability that you have swine flu given that your test outcome is positive?
 99 / 100
 You went to Miami and 1 in 350 people came back with swine flu. Calculate the new probability that you'll test positive.
-(1 / 350) * (99 / 100)
+(1 / 350) * (99 / 100) / (1 / 100)
 If the probability of a false positive is 2%, what is the new probability that you have swine flu after your vacation?
-(1 / 350) * (98 / 100)
+(1 / 350) * (98 / 100) / (2 / 100)
 
 
 Picniс 
 
-(1 / 2) * (1 / 10)
+(1 / 2) * (1 / 10) / (1 / 4)
