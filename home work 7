@@ -1,0 +1,12 @@
+White queen (ферзь) will stand in space a1 = 1 / 8 
+Black queen will stand in space a1 = 0
+White rook (ладья) will stand in space a1 = 1 / 4
+White queen will not stand in space a1 = 7 / 8
+White rook will not stand in space a1 = 3 / 4 
+There is a white queen in space a1. Find a probability that:
+King in a2 = 1 / 7
+Knight (конь) in a2 = 1 / 7
+Knight in a1 = 0
+
+Normal distribution
+Your normal distribution has mean=0. Find stddev of that distribution if sf(1) = 0.5
