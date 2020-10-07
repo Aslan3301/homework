@@ -1,0 +1,25 @@
+import numpy as np
+import math
+def plot_valuas(f, l):
+    for val in l:
+        print(val, f(val))
+f= lambda x:  (x-0.1)*(x-0.1)/10 + math.sin(3 * x)
+l = np.arange(-10, 10, 0.01)
+def find_min(f, l):
+    _min = f(l[0])
+    min_x = l[0]
+    for val in l:
+        if f(val) < _min:
+            _min = f(val)
+            min_x = val
+    print(min_x, _min)
+def find_max(f, l):
+    _max = f(l[0])
+    max_x = l[0]
+    for val in l:
+        if f(val) > _max:
+            _max = f(val)
+            max_x = val
+    print(max_x, _max)
+find_min(f, l)
+find_max(f, l)
