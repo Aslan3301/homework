@@ -1,1 +1,15 @@
-
+import numpy as np
+import math
+f= lambda x: (x/10) ** 3 * math.sin(2x)
+l = np.arange(-1000, 1000, 0.1)
+def find_min(f, l):
+    _min = f(l[0])
+    min_x = l[0]
+    for val in l:
+        if f(val) < _min:
+            _min = f(val)
+            min_x = val
+    print(min_x, _min)
+find_min(f, l)
+f= lambda x: x ** 4 - x ** 3 + x ** -1
+find_min(f, l)
