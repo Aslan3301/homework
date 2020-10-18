@@ -41,3 +41,6 @@ Y = X^2 learning_rate 0.001 start_point 5 required count of steps = 2647
 Y = X^2 learning_rate 0.0001 start_point 5 required count of steps = 26489
 y = sqrt(|x|) learning_rate 10 start_point 10 С таким learning_rate мы никогда не найдём 0 функции 
 y = sqrt(|x|) learning_rate 1 start_point 10 С таким learning_rate мы никогда не найдём 0 функции 
+y = sqrt(|x|) learning_rate 0.1 start_point 10 С таким learning_rate 424
+y = sqrt(|x|) learning_rate 0.01 start_point 10 С таким learning_rate 4264
+y = sqrt(|x|) learning_rate 0.001 start_point 10 С таким learning_rate 42180
