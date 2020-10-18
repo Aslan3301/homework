@@ -39,6 +39,22 @@ Y = X^2 learning_rate 0.1 start_point 5 required count of steps = 24
 Y = X^2 learning_rate 0.01 start_point 5 required count of steps = 263
 Y = X^2 learning_rate 0.001 start_point 5 required count of steps = 2647
 Y = X^2 learning_rate 0.0001 start_point 5 required count of steps = 26489
+f = lambda x: abs(x) ** 0.5
+
+def find_min(f, learning_rate = 0.001, itter_count = 1000, currentX = None):
+    steps = 0
+    if currentX is None:
+        currentX = random.randint(-10, 10)
+    for i in range(itter_count):
+        steps += 1
+        der = derivitive(f, currentX)
+        currentX -= learning_rate * der
+        if  -0.05 < der ** -1 < 0.05:
+            return print(currentX), print(steps)
+        print(currentX)
+    print(currentX)
+    print(steps)
+
 y = sqrt(|x|) learning_rate 10 start_point 10 С таким learning_rate мы никогда не найдём 0 функции 
 y = sqrt(|x|) learning_rate 1 start_point 10 С таким learning_rate мы никогда не найдём 0 функции 
 y = sqrt(|x|) learning_rate 0.1 start_point 10 С таким learning_rate 424
