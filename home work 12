@@ -1,0 +1,29 @@
+import numpy as np
+import pandas as pd
+
+def create_dataset(a = 2, b = 3, size = 10):
+    for i in range(size):
+        x = np.random.uniform(-10, 10)
+        y = np.random.uniform(-10, 10)
+        noise = np.random.normal(loc = 0, scale = 0.001)
+        z = a * x + b * y + noise
+        yield {'x': x , 'y' : y, 'z' : z}
+
+df = pd.DataFrame(columns=['x','y','z'])
+for i in create_dataset(size=1000):
+    df = df.append(i, ignore_index = True)
+print(df.head())
+medium = int(sum(list(df["x"])) / len(list(df["x"])))
+for j in range(len(list(df["x"]))):
+    standart =+ abs(list(df['x'])[j]-medium)
+standart = standart / (len(list(df["x"]))-1)
+print(medium , standart)
+summ = []
+for i in range(len(list(df["x"]))):
+    summ.append(list(df['z'])[i] - 2 * list(df['z'])[i] - 3 * list(df['z'])[i])
+medium_summ = int(sum(summ) / len(summ))
+print(summ)
+for j in range(len(summ)):
+    standart_summ =+ abs(summ[j]-medium_summ)
+standart_summ = standart_summ / (len(summ)-1)
+print(medium_summ, standart_summ)
