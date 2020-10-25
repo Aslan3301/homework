@@ -36,3 +36,5 @@ for i in range(100):
     b = random.uniform(-100, 100)
     c = random.uniform(-100, 100)
     derivitive_a(f, a, b, c)
+    derivitive_b(f, a, b, c)
+    derivitive_c(f, a, b, c)
