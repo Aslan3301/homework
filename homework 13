@@ -5,8 +5,8 @@ def derivitive_a(f, a , b , c):
     f2 = f(a + da, b, c)
     f1 = f(a, b, c)
     df = f2 - f1
-    if df/da < 9.5 or df/da > 8.5:
-        print("a,b,c for df/da" ,a, b, c)
+    if df/da < 9.5 and df/da > 8.5:
+        print("a,b,c for df/da", a, b, c)
     return df / da
 
 def f(a, b, c):
@@ -17,8 +17,8 @@ def derivitive_b(f, a, b, c):
     f2 = f(a, b + db, c)
     f1 = f(a, b, c)
     df = f2 - f1
-    if df/db < -7.5 or df/db > -6.5:
-        print("a,b,c for df/db" a, b, c)
+    if df/db < -7.5 and df/db > -6.5:
+        print("a,b,c for df/db", a, b, c)
     return df / db
 
 
@@ -27,8 +27,8 @@ def derivitive_c(f, a, b, c):
     f2 = f(a , b, c + dc)
     f1 = f(a, b, c)
     df = f2 - f1
-    if df/dc < 15.5 or df/dc > 14.5:
-        print("a,b,c for df/dc" a, b, c)
+    if df/dc < 15.5 and df/dc > 14.5:
+        print("a,b,c for df/dc", a, b, c)
     return df / dc
 
 for i in range(100):
