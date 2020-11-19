@@ -4,4 +4,36 @@ A derivative is a financial security with a value that is reliant upon or derive
 The derivative itself is a contract between two or more parties, and the derivative derives its price from fluctuations in the underlying asset.
 If sign of the derivative positive our function is increasing, if the sign of the derivative negative our function is decreasing. 
 The derivitive is dx / dy 
-2.
+2. The global minimum is -1.181903499840038. I find it with help this code :
+import random
+#args:
+# f - function to find a derivitive
+# x1 - x1 is coord
+def derivitive(f, x1):
+    dx = 0.000001
+    x2 = x1 + dx
+    y1 = f(x1)
+    y2 = f(x2)
+    dy = y2 - y1
+    return dy / dx
+
+f = lambda x: x ** 4 + x ** 3 - x ** 2
+
+def find_min(f, learning_rate = 0.001, itter_count = 1000, currentX = None):
+    steps = 0
+    if currentX is None:
+        currentX = random.randint(-10, 10)
+    for i in range(itter_count):
+        der = derivitive(f, currentX)
+        currentX -= learning_rate * der
+        if -0.05 < der < 0.05:
+            return print(currentX), print(steps)
+        print(currentX)
+        steps += 1
+    print(currentX)
+    print(steps)
+find_min(f)
+3. Learning rate is the paramitar of step usually it is very small namber.
+If our derivitive is 0 it is minimum or max of function and if our y is smallest and derivitive is 0 it is minimum 
+4. Our function is not get the true value becouse we can onle predict it. And the difference of our prediction and true value is our error.
+Y_pred is our prediction, Y_true is our true value. df / da  is derivitive of a(koef), Df / dx is derivitive of x(variable).
